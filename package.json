@@ -1,12 +1,8 @@
 {
-  "name": "materialui-express-boilerplate",
+  "name": "home_server",
   "author": "Cory Forward",
   "version": "0.1.0",
   "description": "Boilerplate for Express applications that use React, and more specifically the Material-UI library",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/c4wrd/materialui-express-boilerplate"
-  },
   "scripts": {
     "test": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors",
     "start": "webpack --config webpack-production.config.js --progress --colors && node server.js"
@@ -28,11 +24,15 @@
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
+    "events": "^1.1.0",
     "express": "^4.13.4",
+    "flux": "^2.1.1",
     "hbs": "^4.0.0",
     "material-ui": "^0.14.4",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
-    "react-tap-event-plugin": "^0.2.1"
+    "react-router": "^2.0.0",
+    "react-tap-event-plugin": "^0.2.1",
+    "socket.io": "^1.4.5"
   }
 }

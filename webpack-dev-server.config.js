@@ -20,7 +20,8 @@ var config = {
     devtool: 'eval',
     hot: true,
     inline: true,
-    port: 3000
+    port: 3000,
+    host: "0.0.0.0"
   },
   devtool: 'eval',
   output: {
