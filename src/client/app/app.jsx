@@ -1,8 +1,21 @@
 import injectTapEventPlugin from 'react-tap-event-plugin';
-import Index from './pages/Index';
-import HomeAppBar from './components/HomeAppBar.jsx'
+import AppLayout from './components/AppLayout';
+import Page2 from './components/Page2';
+import Index from './components/Index';
+import { hashHistory, IndexRoute, Route, Router } from 'react-router';
 
 injectTapEventPlugin();
 
-ReactDOM.render(<HomeAppBar title="TitleBar"/>, document.getElementById('title-bar'));
-ReactDOM.render(<Index />, document.getElementById('page-target'));
+let routes = (
+  <Route path="/" component={AppLayout}>
+      <IndexRoute component={Index}/>
+      <Route path="page2" component={Page2}/>
+  </Route>
+);
+
+ReactDOM.render(
+    <Router history={hashHistory}>
+        {routes}
+    </Router>,
+    document.getElementById('page-target')
+);

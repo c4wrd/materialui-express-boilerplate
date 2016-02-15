@@ -1,7 +1,7 @@
 {
   "name": "materialui-express-boilerplate",
   "author": "Cory Forward",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Boilerplate for Express applications that use React, and more specifically the Material-UI library",
   "repository": {
     "type": "git",
@@ -33,6 +33,7 @@
     "material-ui": "^0.14.4",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
+    "react-router": "^2.0.0",
     "react-tap-event-plugin": "^0.2.1"
   }
 }
