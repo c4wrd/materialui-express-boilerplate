@@ -1,12 +1,12 @@
 import React from 'react';
 import LoginStore from '../stores/LoginStore';
-
+import HistoryContainer from '../services/HistoryContainer'
 export default (ComposedComponent) => {
     return class AuthenticatedComponent extends React.Component {
 
         static willTransitionTo(transition) {
             if (!LoginStore.isLoggedIn()) {
-                transition.redirect('/login', {}, {'nextPath' : transition.path});
+                HistoryContainer.push('/login');
             }
         }
 

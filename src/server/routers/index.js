@@ -1,4 +1,5 @@
 var express = require("express");
+var apis = require('./api');
 
 var router = express.Router();
 

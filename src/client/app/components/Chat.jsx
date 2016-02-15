@@ -1,5 +1,5 @@
 import { Paper, Card, CardHeader, CardText } from 'material-ui';
-import AuthCompnent from './AuthComponent'
+import AuthComponent from './AuthComponent'
 
 const style = {
     height: '20%',

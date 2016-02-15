@@ -28,6 +28,7 @@
     "express": "^4.13.4",
     "flux": "^2.1.1",
     "hbs": "^4.0.0",
+    "jwt-decode": "^1.5.1",
     "material-ui": "^0.14.4",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
