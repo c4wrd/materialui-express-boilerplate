@@ -28,6 +28,7 @@
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
+    "events": "^1.1.0",
     "express": "^4.13.4",
     "hbs": "^4.0.0",
     "material-ui": "^0.14.4",
