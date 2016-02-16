@@ -1,7 +1,8 @@
 # [Material-UI](http://callemall.github.io/material-ui/) - Example Webpack Project with Express
 
-This is an example project that uses [Material-UI](http://callemall.github.io/material-ui/) served with Express
-
+This is an example project that uses [Material-UI](http://callemall.github.io/material-ui/) served with Express.
+This project adopts the Flux architecture design, so make sure you understand how Flux operates before attempting 
+to use this. Sample stores, actions, and a dispatcher are provided, but are NOT linked to the webpage in anyway.git
 ## Installation
 
 Install dependencies
