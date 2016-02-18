@@ -3,11 +3,8 @@ var io = require("socket.io");
 var hbs = require('hbs');
 
 var app = express();
-app.use(express.static('build'));
 
+app.use(express.static('build'));
 app.use('/', require('./src/server/routers/index'));
-app.set('views', __dirname + '/views');
-app.set('view engine', 'html');
-app.engine('html', hbs.__express);
 
 app.listen(3000);
