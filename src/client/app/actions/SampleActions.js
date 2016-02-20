@@ -8,7 +8,7 @@ class SampleActions {
      */
     setItem(item) {
         AppDispatcher.handleViewAction({
-            action: SampleConstants.SAMPLE_EVENT_ID,
+            actionType: SampleConstants.SAMPLE_EVENT_ID,
             item: item  // passes our 'item' to become our new item in our store
         })
     }

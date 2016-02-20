@@ -1,9 +1,9 @@
 import EventEmitter from 'events';
 import AppDispatcher from '../dispatchers/AppDispatcher';
 
-export default class BaseStore extends EventEmitter {
+var CHANGE_EVENT = 'CHANGE';
 
-    CHANGE_EVENT = 'CHANGE';
+export default class BaseStore extends EventEmitter {
 
     constructor() {
         this._dispatchToken = null;
